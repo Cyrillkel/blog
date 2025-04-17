@@ -20,12 +20,10 @@ const Navbar = () => {
               key={link.href}
               className={cn(
                 "text-gray-700 hover:text-blue-600 transition-colors",
-                "text-sm sm:text-base", // Адаптивные размеры текста
+                "text-sm sm:text-base",
                 {
                   "text-blue-600 font-medium border-b-2 border-blue-600":
                     pathname === link.href,
-                  // Можно добавить подчеркивание для активной ссылки:
-                  // "border-b-2 border-blue-600": pathname === link.href
                 }
               )}
             >
